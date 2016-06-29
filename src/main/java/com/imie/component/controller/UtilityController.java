@@ -1,16 +1,16 @@
+/**
+ * Package which contains all controllers
+ */
 package com.imie.component.controller;
 
 import org.springframework.web.bind.annotation.*;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.Instant;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
-import java.util.TimeZone;
 
 /**
- * <b>RestController Utility class</b>
+ * <b>Utility RestController class</b>
  *
  * @author kevin boussard
  * @version 1.0
@@ -24,7 +24,10 @@ public class UtilityController {
      *
      * <p>It's a Web-Service is accessible via 'localhost:8080/api/utility/date/change'</p>
      *
-     * <p>The param 'Date' must to give to the Request Body. Example : "2016-06-25"</p>
+     * <p>
+     *     The param 'Date' must to give to the Request Body. Example : "2016-06-25"
+     *     Expected Format :"yyyy-MM-dd'T'HH:mm:ss.SSSZ", "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", "EEE, dd MMM yyyy HH:mm:ss zzz", "yyyy-MM-dd"
+     * </p>
      *
      * @param date - Date that will be convert to iso8601
      * @return String - Date after convertion

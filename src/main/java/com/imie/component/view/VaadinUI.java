@@ -1,28 +1,22 @@
+/**
+ * Package which contains all views
+ */
 package com.imie.component.view;
 
-import com.imie.component.entity.Invoice;
-import com.imie.component.form.InvoiceEditor;
-import com.imie.component.repository.InvoiceRepository;
-import com.imie.component.repository.ProductRepository;
-import com.vaadin.event.FieldEvents;
-import com.vaadin.event.SelectionEvent;
+import com.vaadin.annotations.Theme;
 import com.vaadin.navigator.Navigator;
+import com.vaadin.server.VaadinRequest;
+import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.spring.navigator.SpringViewProvider;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.StringUtils;
-
-import com.vaadin.annotations.Theme;
-import com.vaadin.data.util.BeanItemContainer;
-import com.vaadin.server.FontAwesome;
-import com.vaadin.server.VaadinRequest;
-import com.vaadin.spring.annotation.SpringUI;
-
-import java.util.List;
 
 /**
- * Created by kevin on 23/06/16.
+ * <b>Vaadin View</b>
+ *
+ * @author kevin boussard
+ * @version 1.0
  */
 @SpringUI
 @Theme("valo")

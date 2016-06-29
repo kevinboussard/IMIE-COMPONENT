@@ -1,10 +1,18 @@
+/**
+ * Package which contains all repositories
+ */
 package com.imie.component.repository;
 
 import com.imie.component.entity.OrderDetail;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- * Created by kevin on 23/06/16.
+ * <b>OrderDetail Repository Class</b>
+ *
+ * <p> OrderDetail DAO </p>
+ *
+ * @author kevin boussard
+ * @version 1.0
  */
 public interface OrderDetailRepository extends JpaRepository<OrderDetail,Integer> {
 }

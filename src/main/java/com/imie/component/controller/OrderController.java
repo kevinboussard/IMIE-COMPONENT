@@ -1,3 +1,6 @@
+/**
+ * Package which contains all controllers
+ */
 package com.imie.component.controller;
 
 import com.imie.component.entity.Order;
@@ -5,7 +8,6 @@ import com.imie.component.repository.OrderRepository;
 import com.imie.component.tool.EntityList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 /**
@@ -18,6 +20,7 @@ import java.util.List;
 @RequestMapping("/api/order")
 public class OrderController {
 
+
     @Autowired
     private OrderRepository orderRepository;
 
@@ -26,9 +29,10 @@ public class OrderController {
      *
      * <p>It's a Web-Service is accessible via 'localhost:8080/api/order/get/all'.</p>
      *
-     * <p>Return two formats :
-     *      <li>XML - By default - Add to the request header : 'Accept':'application/xml'</li>
-     *      <li>JSON - Add to the request header : 'Accept':'application/json'</li>
+     * <p>
+     *     Return two formats : <br>
+     *      XML - By default - Add to the request header : 'Accept':'application/xml' <br>
+     *      JSON - Add to the request header : 'Accept':'application/json'
      * </p>
      *
      * @return List - All Orders
@@ -51,9 +55,9 @@ public class OrderController {
      * <p>Example : localhost:8080/api/order/get/1</p>
      *
      * <p>
-     *     Return two formats :
-     *      <li>XML - By default - Add to the request header : 'Accept':'application/xml'</li>
-     *      <li>JSON - Add to the request header : 'Accept':'application/json'</li>
+     *     Return two formats : <br>
+     *      XML - By default - Add to the request header : 'Accept':'application/xml' <br>
+     *      JSON - Add to the request header : 'Accept':'application/json'
      * </p>
      *
      * @param orderId - Order Id that will be retrieved
@@ -72,9 +76,21 @@ public class OrderController {
      * <p>It's a Web-Service is accessible via 'localhost:8080/api/order/create'</p>
      *
      * <p>
-     *     Request, two formats :
-     *      <li>XML - Add to the request header : 'Accept':'application/xml' and the new Order.</li>
-     *      <li>JSON - Add to the request header : 'Accept':'application/json' and the new Order.</li>
+     *     Request, two formats : <br>
+     *      XML - Add to the request header : 'Accept':'application/xml' and the new Order. <br>
+     *      JSON - Add to the request header : 'Accept':'application/json' and the new Order.
+     * </p>
+     *
+     * <p>
+     *     Example Request Body : <br>
+     *
+     *     JSON :
+     *         { "dateGreated": "2016-06-27T22:00:00+0000" } <br>
+     *
+     *
+     *     XML :
+     *         &lt;order&gt; &lt;dateGreated&gt;2016-06-28T00:00:00+02:00 &lt;/dateGreated&gt; &lt;/order&gt;"
+     *
      * </p>
      *
      *

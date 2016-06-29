@@ -1,3 +1,6 @@
+/**
+ * Package which contains all entities
+ */
 package com.imie.component.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -185,6 +188,7 @@ public class Customer {
     }
 
     /**
+     * Get the Customer Id
      * @return int  - Customer Id
      */
     public int getId() {
@@ -192,6 +196,7 @@ public class Customer {
     }
 
     /**
+     * Get the Customer Reference
      * @return String  - Customer Ref
      */
     public String getRef() {
@@ -199,6 +204,7 @@ public class Customer {
     }
 
     /**
+     * Set a Reference
      * @param ref - String - Customer Reference
      */
     public void setRef(String ref) {
@@ -206,6 +212,7 @@ public class Customer {
     }
 
     /**
+     * Get the Customer Name
      * @return String  - Customer Name
      */
     public String getName() {
@@ -213,6 +220,7 @@ public class Customer {
     }
 
     /**
+     * Set a Name
      * @param name - String - Customer Name
      */
     public void setName(String name) {
@@ -220,6 +228,7 @@ public class Customer {
     }
 
     /**
+     * Get the Customer Address
      * @return String  - Customer Address
      */
     public String getAddress() {
@@ -227,6 +236,7 @@ public class Customer {
     }
 
     /**
+     * Set Address
      * @param address - String - Customer Address
      */
     public void setAddress(String address) {
@@ -234,6 +244,7 @@ public class Customer {
     }
 
     /**
+     * Get the Customer Zip
      * @return String  - Customer Zip
      */
     public String getZip() {
@@ -241,6 +252,7 @@ public class Customer {
     }
 
     /**
+     * Set a Zip
      * @param zip - String - Customer Zip
      */
     public void setZip(String zip) {
@@ -248,6 +260,7 @@ public class Customer {
     }
 
     /**
+     * Get the Customer City
      * @return String  - Customer City
      */
     public String getCity() {
@@ -255,6 +268,7 @@ public class Customer {
     }
 
     /**
+     * Set a City
      * @param city - String - Customer City
      */
     public void setCity(String city) {
@@ -262,6 +276,7 @@ public class Customer {
     }
 
     /**
+     * Get the Customer Email
      * @return String  - Customer Email
      */
     public String getEmail() {
@@ -269,6 +284,7 @@ public class Customer {
     }
 
     /**
+     * Set an Email
      * @param email - String - Customer Email
      */
     public void setEmail(String email) {
@@ -276,6 +292,7 @@ public class Customer {
     }
 
     /**
+     * Get the Customer Phone
      * @return String  - Customer Phone
      */
     public String getPhone() {
@@ -283,6 +300,7 @@ public class Customer {
     }
 
     /**
+     * Set a Phone
      * @param phone - String - Customer Phone
      */
     public void setPhone(String phone) {
@@ -290,6 +308,7 @@ public class Customer {
     }
 
     /**
+     * Get the Customer Orders
      * @return List  - Customer Orders
      */
     public List<Order> getOrders() {
@@ -297,6 +316,7 @@ public class Customer {
     }
 
     /**
+     * Set Orders
      * @param orders - List - Customer Orders
      */
     public void setOrders(List<Order> orders) {

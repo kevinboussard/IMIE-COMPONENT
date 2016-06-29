@@ -1,3 +1,6 @@
+/**
+ * Package which contains all Forms Editor
+ */
 package com.imie.component.form;
 
 import com.imie.component.entity.Customer;
@@ -13,8 +16,13 @@ import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.Date;
+
 /**
- * Created by kevin on 24/06/16.
+ * <b>Order Form Editor Class</b>
+ *
+ * @author kevin boussard
+ * @version 1.0
  */
 @SpringComponent
 @UIScope
@@ -46,7 +54,6 @@ public class OrderEditor extends VerticalLayout {
         this.customerRepository = customerRepository;
 
         this.customers = new ComboBox("customers", customerRepository.findAll());
-
         addComponents(dateGreated,customers,actions);
 
         // Configure and style components

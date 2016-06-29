@@ -1,3 +1,6 @@
+/**
+ * Package which contains all views
+ */
 package com.imie.component.view;
 
 import com.imie.component.entity.Product;
@@ -14,7 +17,10 @@ import org.springframework.util.StringUtils;
 import javax.annotation.PostConstruct;
 
 /**
- * Created by kevin on 24/06/16.
+ * <b>Product View</b>
+ *
+ * @author kevin boussard
+ * @version 1.0
  */
 @SpringView(name = ProductView.VIEW_NAME)
 public class ProductView extends VerticalLayout implements View {

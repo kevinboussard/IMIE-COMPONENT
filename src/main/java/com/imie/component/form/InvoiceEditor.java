@@ -1,3 +1,6 @@
+/**
+ * Package which contains all Forms Editor
+ */
 package com.imie.component.form;
 
 import com.imie.component.entity.Invoice;
@@ -13,7 +16,10 @@ import com.vaadin.ui.themes.ValoTheme;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * Created by kevin on 24/06/16.
+ * <b>Invoice Form Editor Class</b>
+ *
+ * @author kevin boussard
+ * @version 1.0
  */
 @SpringComponent
 @UIScope

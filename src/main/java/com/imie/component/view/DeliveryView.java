@@ -1,3 +1,6 @@
+/**
+ * Package which contains all views
+ */
 package com.imie.component.view;
 
 import com.imie.component.entity.Delivery;
@@ -15,7 +18,10 @@ import org.springframework.util.StringUtils;
 import javax.annotation.PostConstruct;
 
 /**
- * Created by kevin on 24/06/16.
+ * <b>Delivery View</b>
+ *
+ * @author kevin boussard
+ * @version 1.0
  */
 @SpringView(name = DeliveryView.VIEW_NAME)
 public class DeliveryView extends VerticalLayout implements View {

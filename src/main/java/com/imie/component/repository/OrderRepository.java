@@ -1,3 +1,6 @@
+/**
+ * Package which contains all repositories
+ */
 package com.imie.component.repository;
 
 import com.imie.component.entity.Order;
@@ -8,7 +11,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * Created by kevin on 23/06/16.
+ * <b>Order Repository Class</b>
+ *
+ * <p> Order DAO </p>
+ *
+ * @author kevin boussard
+ * @version 1.0
  */
 public interface OrderRepository extends JpaRepository<Order,Integer> {
     Order findById(int id);

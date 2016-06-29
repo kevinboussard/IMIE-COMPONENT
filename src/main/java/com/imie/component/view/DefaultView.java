@@ -1,3 +1,6 @@
+/**
+ * Package which contains all views
+ */
 package com.imie.component.view;
 
 import com.vaadin.navigator.View;
@@ -9,7 +12,10 @@ import com.vaadin.ui.VerticalLayout;
 import javax.annotation.PostConstruct;
 
 /**
- * Created by kevin on 24/06/16.
+ * <b>Default View</b>
+ *
+ * @author kevin boussard
+ * @version 1.0
  */
 @SpringView(name = DefaultView.VIEW_NAME)
 public class DefaultView extends VerticalLayout implements View {

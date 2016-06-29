@@ -1,3 +1,6 @@
+/**
+ * Package which contains all tool functions
+ */
 package com.imie.component.tool;
 
 import com.imie.component.entity.Order;
@@ -9,7 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by kevin on 28/06/16.
+ * <b>Entity List Wrapper</b>
+ *
+ * @author kevin boussard
+ * @version 1.0
  */
 @XmlRootElement
 @XmlSeeAlso({Order.class})
