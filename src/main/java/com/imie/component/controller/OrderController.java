@@ -28,6 +28,7 @@ public class OrderController {
      *<b>Function to enable to retrieve all orders.</b>
      *
      * <p>It's a Web-Service is accessible via 'localhost:8080/api/order/get/all'.</p>
+     * <p>Method : GET</p>
      *
      * <p>
      *     Return two formats : <br>
@@ -51,6 +52,7 @@ public class OrderController {
      *<b>Function to enable to retrieve one order by its id.</b>
      *
      * <p>It's a Web-Service is accessible via 'localhost:8080/api/order/get/{orderId}'</p>
+     * <p>Method : GET</p>
      *
      * <p>Example : localhost:8080/api/order/get/1</p>
      *
@@ -74,11 +76,12 @@ public class OrderController {
      * <b>Function to enable to create a new Order</b>
      *
      * <p>It's a Web-Service is accessible via 'localhost:8080/api/order/create'</p>
+     * <p>Method : POST</p>
      *
      * <p>
      *     Request, two formats : <br>
-     *      XML - Add to the request header : 'Accept':'application/xml' and the new Order. <br>
-     *      JSON - Add to the request header : 'Accept':'application/json' and the new Order.
+     *      XML - Add to the request header : 'Content-Type':'application/xml' and the new Order. <br>
+     *      JSON - Add to the request header : 'Content-Type':'application/json' and the new Order.
      * </p>
      *
      * <p>
