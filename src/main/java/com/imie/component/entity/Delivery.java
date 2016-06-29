@@ -5,6 +5,7 @@ package com.imie.component.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -58,6 +59,7 @@ public class Delivery {
      */
     @Column(name="dateDelivery", nullable = false)
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:SSZ")
+    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:SSZ")
     @XmlElement
     private Date dateDelivery;
 
