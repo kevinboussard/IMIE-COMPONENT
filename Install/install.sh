@@ -7,7 +7,7 @@
 USER="root"
 PASSWORD="password"
 TOMCAT_WEBAPPS_PATH="/var/lib/tomcat8/webapps"
-WAR_FILE="component.war"
+WAR_FILE="component-imie-0.1.0.war"
 
 echo "#####################APT-GET UPDATE######################"
 apt-get update 
